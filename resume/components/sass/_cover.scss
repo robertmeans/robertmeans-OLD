@@ -1,0 +1,182 @@
+#cv {
+  #cover-body {
+    width: 90%;
+    margin: 0 auto 80px auto;
+    p.date {
+      margin-left: 60%;
+      margin-top: 5em;
+    }
+    p.covid {
+      margin-top: 0.5em;
+      padding-left: 5px;
+      font-size: 0.6em;
+      color: #717171;
+      margin-left: 60%;
+    }
+    p.open {
+      margin-top: 5em;
+      margin-bottom: 2em;
+    }
+    p.body-copy {
+      line-height: 1.5em;
+      margin-top: 1em;
+    }
+    #signature {
+      margin: 2em 0 4em 60%;
+      position: relative;
+      & > img {
+        position: absolute;
+        bottom: 0.5em;
+        width: 100%;
+        max-width: 280px;
+      }
+      p.name {
+        margin-top: 3em;
+      }
+    }
+  }
+}
+
+button#button-box-01,
+button#button-box-02,
+button#button-box-03,
+button#button-box-04,
+button#button-box-05,
+button#button-box-06 {
+  -webkit-appearance: none;
+  color: #313131;
+  color: #757575;
+  color: rgba(147,6,6,1);
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  font: inherit;
+  padding: 0px;
+  border: none;
+  border-image: none;
+  text-decoration: underline;
+  outline: none;
+  // display: block;
+  // margin-left: 0.5em;
+  transition: color 0.2s ease;
+  &:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.75);
+  }
+}
+button#button-box-04 {
+  color: #fff;
+  margin-left: 0.5em;
+  &:hover {
+    color: #fff;
+  }
+}
+button#button-box-01,
+button#button-box-02,
+button#button-box-03,
+button#button-box-04,
+button#button-box-05, {
+  position: absolute;
+  z-index: 99;
+}
+button#button-box-06 {
+  position: relative;
+}
+#box-01,
+#box-02,
+#box-03,
+#box-04,
+#box-05,
+#box-06 {
+  // keeps hidden on load (I think)
+  display: none;
+}
+
+#box-01,
+#box-02 {
+  line-height: 1.5em;
+  padding: 1em 2.5em;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0.5em 1em;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+  > p {
+    margin-top: 1em;
+  }
+  > p:first-of-type {
+    margin-top: 0;
+  }
+}
+#box-06 {
+  line-height: 1.5em;
+  padding: 1em;
+  border-top: 1px solid #1e3b57;
+  border-bottom: 1px solid #1e3b57;
+  margin-top: 0.5em;
+  color: #fff;
+  background-color: #3e79b3;
+}
+#cv .left-third .glance #box-03 {
+  & > ul {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #cv {
+    #cover-body {
+      p.date,
+      #signature {
+        margin-left: 0;
+        line-height: 1.2em;
+      }
+      p.date {
+        margin-top: 3.5em;
+      }
+      p.open {
+        margin-top: 2em;
+      }
+    }
+  }
+  #box-01,
+  #box-02 {
+    padding: 1em 1.5em;
+    margin: 0.5em 0em;
+  }
+
+  button#button-box-01,
+  button#button-box-02,
+  button#button-box-03,
+  // button#button-box-04,
+  button#button-box-05,
+  button#button-box-06 {
+    position: absolute;
+    z-index: 8;
+  }
+  button#button-box-04 {
+    position: relative;
+  }
+  #bobs-message .inside-message i.fa-hand-point-left {
+    margin-left: 1.5em;
+  }
+  .small-gone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #cv {
+    padding: 0px 10px 20px;
+    #cover-body {
+      #signature {
+        p.name {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+  #box-01,
+  #box-02 {
+    padding: 1em 0.5em;
+  }
+}

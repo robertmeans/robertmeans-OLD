@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /
+
+User-agent: GoogleBot
+Allow: /
+Disallow: /health/
+Disallow: /resume/
+Disallow: /cv/
+Disallow: /conspectus/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /health/
+Disallow: /resume/
+Disallow: /cv/
+Disallow: /conspectus/
+
+User-agent: yahoo-mmcrawler
+Allow: /
+Disallow: /health/
+Disallow: /resume/
+Disallow: /cv/
+Disallow: /conspectus/

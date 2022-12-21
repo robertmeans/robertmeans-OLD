@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+ 
+ <script language="javascript">
+function toggle() {
+ var ele = document.getElementById("tbl");
+ var text = document.getElementById("displayText");
+ if(ele.style.display == "block") {
+      ele.style.display = "none";
+  text.innerHTML = "show";
+   }
+ else {
+  ele.style.display = "block";
+  text.innerHTML = "hide";
+ }
+}
+</script>
+</head>
+ 
+<body onload="toggle()">
+ 
+    <a id="displayText" href="javascript:toggle();">show</a>
+  <table id="tbl">
+  <tr>
+  <td>Welcome to author code. </td>
+  </tr>
+  </table>
+</body>
+</html>

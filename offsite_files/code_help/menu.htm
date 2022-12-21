@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>losing my mind!</title>
+<style type="text/css">
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  color: black;
+  background: white;
+}
+#wrapper {
+  background: #036;
+  width: 800px;
+  border: 5px solid #FFF;
+  text-align: left;
+  position: relative;
+  margin-bottom: 100px;
+}
+#content {
+  background: #999;
+  border-top: 5px solid #FFF;
+  padding-top: 25px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+}
+ul {
+  width: 600px;
+  list-style-type: none;
+  margin: 0px 0px 15px 20px;
+}
+.category {
+  font-size: 1.3em;
+  font-weight: bold;
+  color:#4D4D4D;
+  line-height: 2em;
+}
+.item {
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 33px;
+  color: #A75212;
+  border-top: 1px solid #ccc;
+}
+.option {
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 33px;
+  color: #757575;
+}
+.desc {
+  font-size: 1em;
+  color: #757575;
+}
+.price {
+  color: #0000ff;
+  text-align: right;
+}
+.task_itemText a {
+  color: #333;
+  text-decoration: none;
+}
+.task_itemPlusImage {
+  margin: 0px;
+  padding: 0px 5px 0px 0px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.task_itemText {
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  top: 1px;
+  position: relative;
+  font-size: 0.9em;
+}
+#task_item01 {
+  background: #999 url(_images/tabOdd.gif) no-repeat 33px;
+}
+#div01 {
+  background: #fff;
+  border: 1px solid #333;
+  position: relative;
+  top: -1px;
+  margin-bottom: 5px;
+  padding-bottom: 25px;
+}
+#wrapper #content #div01 img {
+  position: relative;
+  left: -1px;
+  top: -12px;
+}
+#task_item02 {
+  background: #999 url(_images/tabEven.gif) no-repeat 33px;
+  top: -1px;
+  position: relative;
+}
+#div02 {
+  background: #e9e4ce;
+  border: 1px solid #333;
+  position: relative;
+  top: -2px;
+  margin-bottom: 5px;
+}
+#wrapper #content #div02 img {
+  position: relative;
+  left: -1px;
+  top: -12px;
+}
+</style>
+
+<script language="javascript">
+<!--
+imageX01='plus';
+imageX02='plusEven';
+imageX03='plus';
+imageX04='plusEven';
+imageX05='plus';
+imageX06='plusEven';
+imageX07='plus';
+imageX08='plusEven';
+imageX09='plus';
+imageX10='plusEven';
+imageX11='plus';
+imageX12='plusEven';
+imageX13='plus';
+imageX14='plusEven';
+imageX15='plus';
+
+function toggleOdd(ee){
+imgX="imagePM"+ee;
+divX="div"+ee;
+imageX="imageX"+ee;
+divLink="divHref"+ee;
+imageXval=eval("imageX"+ee);
+element = document.getElementById(divX).style;
+if (element.display=='none') {element.display='block';}
+else {element.display='none';}
+if (imageXval=='plus') {document.getElementById(imgX).src='_images/minus.gif';eval("imageX"+ee+"='minus';");document.getElementById(divLink).title='Hide Content';}
+else {document.getElementById(imgX).src='_images/plus.gif';eval("imageX"+ee+"='plus';");document.getElementById(divLink).title='Show Content';}
+}
+
+function toggleEven(ee){
+imgX="imagePM"+ee;
+divX="div"+ee;
+imageX="imageX"+ee;
+divLink="divHref"+ee;
+imageXval=eval("imageX"+ee);
+element = document.getElementById(divX).style;
+if (element.display=='none') {element.display='block';}
+else {element.display='none';}
+if (imageXval=='plusEven') {document.getElementById(imgX).src='_images/minusEven.gif';eval("imageX"+ee+"='minusEven';");document.getElementById(divLink).title='Hide Content';}
+else {document.getElementById(imgX).src='_images/plusEven.gif';eval("imageX"+ee+"='plusEven';");document.getElementById(divLink).title='Show Content';}
+}
+
+-->
+</script>
+
+</head>
+<body>
+	
+<div id="wrapper">
+<div id="content">
+
+<!-- ********************************  Item 1 Start  ************************** -->
+<div id="task_item01">
+  <p class="task_itemText">
+    <a href="javascript:toggleOdd('01')" id="divHref01">
+      <img src="_images/plus.gif" alt="" name="imagePM01" width="33" height="33" border="0" class="task_itemPlusImage" id="imagePM01" />
+    </a>
+    <a href="javascript:toggleOdd('01')">Traditional</a>
+  </p>
+</div>
+
+<div style="display:none;" id="div01">
+  <img src="_images/tabExpandBtmCover.gif" width="376" height="2" /><br />
+
+    <ul>
+      <li>Served with Wild Potatoes &amp; English muffin</li>
+      <li>Substitute fruit for Wild Potatoes $2</li>
+
+      <li><span class="item">Two Egg Boring Breakfast</span> <span class="price">$5.99</span> 
+        <ul class="desc">
+          <li>Add ham, sausage or bacon $7.99</li>
+          <li>Steak or chicken-fried steak $9.50</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Double Scramble</span> <span class="price">$6.99</span>
+        <ul class="desc">
+          <li>Two eggs, melted cheese served opened-faced</li>
+          <li>Add ham, sausage or bacon $8.25</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Wild Sandwich</span> <span class="price">$3.99</span>
+        <ul class="desc">
+          <li>One egg, melted cheese, choice of bacon or sausage served on English muffin or biscuit</li>
+          <li>With Wild Potatoes $5.50</li>
+        </ul>
+      </li>
+
+      <li><span class="item">2*2*2</span> <span class="price">$8.99</span>
+        <ul class="desc">
+          <li>Two eggs, two pancakes &amp; ham, sausage or bacon</li>
+        </ul>
+      </li>
+    </ul>
+
+</div>
+<!-- ********************************  Item 1 End  **************************** -->
+
+<!-- ********************************  Item 2 Start  ************************** -->
+
+<div id="task_item02">
+  <p class="task_itemText">
+    <a href="javascript:toggleEven('02')" id="divHref02">
+      <img src="_images/plusEven.gif" alt="" name="imagePM01" width="33" height="33" border="0" class="task_itemPlusImage" id="imagePM02" />
+    </a>
+    <a href="javascript:toggleEven('02')">Omelets</a>
+  </p>
+</div>
+
+<div style="display:none;" id="div02">
+  <img src="_images/tabExpandBtmCoverEven.gif" width="376" height="2" /><br />
+
+    <ul>
+      <li><span class="option">Your Choice</span> <span class="price">$8.00</span></li>
+      <li>Served with Wild Potatoes</li>
+      <li>Egg whites 50&cent; extra</li>
+
+      <li><span class="item">Athena</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed spinach, onions &amp; mushrooms with olives &amp; feta topped with melted mozzarella</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Out West</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed onions, peppers &amp; ham topped with jack-cheddar blend &amp; tomatoes</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Acapulco Express</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed onions, refried beans &amp; jalapenos topped with jack-cheddar blend, green chilies &amp; salsa</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Marks</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed onions, mushrooms &amp; steak topped with Chile Verde and melted Swiss cheese</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Wild Leaf</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed onions, mushrooms &amp; spinach topped with melted Swiss cheese</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Aztec Supreme</span>
+        <ul>
+          <li class="desc">Saut&eacute;ed onions, green chilies, salsa &amp; avocado topped with jack-cheddar blend</li>
+        </ul>
+      </li>
+
+      <li><span class="item">Be Your Own Chef - Up to five ingredients including one meat</span>
+        <ul>
+          <li class="desc">Bacon </li>
+          <li class="desc">Jalapenos </li>
+          <li class="desc">Onions </li>
+          <li class="desc">Jack-Cheddar </li>
+          <li class="desc">Refried Beans</li>
+          <li class="desc">Sausage </li>
+          <li class="desc">Avocado </li>
+          <li class="desc">Green Peppers </li>
+          <li class="desc">Swiss Cheese </li>
+          <li class="desc">Green Chilies</li>
+          <li class="desc">Ham </li>
+          <li class="desc">Tomatoes </li>
+          <li class="desc">Olives </li>
+          <li class="desc">Dill Cream Cheese </li>
+          <li class="desc">Salsa</li>
+          <li class="desc">Steak </li>
+          <li class="desc">Zucchini </li>
+          <li class="desc">Mushrooms </li>
+          <li class="desc">Spinach </li>
+          <li class="desc">Smothered with Verde</li>
+        </ul>
+      </li>
+    </ul>
+
+</div>   
+<!-- ********************************  Item 2 End  **************************** -->
+ 
+</div>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#size {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	top: 0px;
+	left: 0px;	
+}
+
+.controls_bkg {
+	z-index: 10;
+	background-color: #000;
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 300px;
+	-moz-border-top-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;	
+}
+.controls {
+	z-index: 20;
+	display: block;
+	color: #000;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	height: 60px;
+	width: 210px;
+	padding: 20px;
+}
+#picture {
+	z-index: 1;
+	background: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#captions {
+	display: block;
+	z-index: 5;	
+	background: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;	
+}
+
+a {
+	font-family: Tahoma, Arial;
+	size: 14px;
+	color: white;
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: underline;	
+}

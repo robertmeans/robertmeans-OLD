@@ -1,0 +1,587 @@
+@media screen and (max-width: 600px){
+
+#div-one {
+	// background-image: url(../_images/sky-small.jpg);
+	height: 800px;
+}
+#div-two {
+// tabs - services - websites - video
+	height: auto;
+	min-height: 480px;
+}
+#div-four {
+	height: 800px;
+}
+#clockScene {
+	// z-index: 100;
+	height: 250px;
+	position: relative;
+}
+
+#bubbles1 {
+// background-image: url(../_images/bubbles1_small.png);
+}
+ 
+#bubbles2 {
+// background-image: url(../_images/bubbles3_small.png);
+}
+ 
+#fish {
+	background-image: url(../_images/fish_small.png);
+}
+#clockid {	
+	background: rgba(208,228,247,.4);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%, rgba(115,177,231,.4) 24%, rgba(10,119,213,.4) 50%, rgba(83,159,225,.4) 79%, rgba(135,188,234,.4) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,228,247,.4)), color-stop(24%,rgba(115,177,231,.4)), color-stop(50%,rgba(10,119,213,.4)), color-stop(79%,rgba(83,159,225,.4)), color-stop(100%,rgba(135,188,234,.4)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
+	background: radial-gradient(ellipse at center,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
+
+	border-radius: 50%;
+	display: block;
+	float: left;
+	clear: both;
+	// position: fixed;
+	margin: -90px 0 0 -20px;
+}
+.text-box { // more styles as screen gets smaller at bottom of this media query
+	position: relative;
+	font-size: 1em;
+	box-sizing: border-box;
+	margin: 80px auto 0px auto;
+	border: 1px solid #000;
+	height: auto;
+	width: 96%;
+	background: rgba(12, 37, 145, .3);
+	padding: 15px;
+
+	// -webkit-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
+	// -moz-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
+	// box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
+
+	h3 {
+		font-size: 1.1em;
+		line-height: 1em;
+		margin: 0px 0px 0px 105px;
+	}
+	p {
+		display: inline-block;
+		line-height: 1.4em;
+		float: left;
+		margin: 0.8em 0em 0em 1em;
+	}
+}
+#EWD {
+	position: relative;
+	margin: -15px auto;
+	text-align: center;
+	.title-text {
+		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
+		font-size: 3.5em;
+
+		-webkit-transition: font-size 1.75s ease;
+		-moz-transition: font-size 1.75s ease;
+		-o-transition: font-size 1.75s ease;
+		transition: font-size 1.75s ease;
+		font-weight: 800;
+		// line-height: .8em;
+		text-transform: capitalize;
+		color: #fff;
+		text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.5);
+	} 
+	img {
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease; 
+		&:hover {
+			-webkit-transform: scale(.9);
+			-moz-transform: scale(.9);
+			-ms-transform: scale(.9);
+			-o-transform: scale(.9);
+			transform: scale(.9);
+		}
+	}	
+}
+.tab-content {
+    // font-size: 1em;
+    padding: 1.5em 0;
+	p {
+		line-height: 1.5em;
+		padding: 0px 20px;
+	}
+}
+.tab-links li {
+    margin: 0px 2px -1px 2px;
+    float: left;
+    list-style: none;
+    .fa {
+    	margin: 0px 10px;
+    }
+    .pad {
+	padding: 0px 10px;
+	}
+}
+
+.tab-links a {
+    padding: 9px 8px;
+}
+#addSites01 h2 {
+	margin: 10px 0px 10px 15px;
+	color: #757575;
+	line-height: 1em;
+}
+.moresites {
+	width: auto;
+}
+.project-col {
+	position: relative;
+	float: left;
+	clear: both;
+	width: 96%;
+}
+ul.second-column {
+	margin-top: -.9em;
+	margin-bottom: 3em;
+}
+.tab-content p.social-network-icons {
+	margin: -45px 0 3px 0;
+	vertical-align: bottom;
+}
+a.click {
+	display: block;
+	margin: 0px auto -30px auto;
+	padding: 15px;
+	float: none;
+}
+div.expand p.seo-strategies {
+	margin-top: 50px;
+}
+.container2 {
+	margin: 30px 5% 50px 5%;
+}
+.about {
+	h1 {
+		font-size: 2.2em;
+		margin: 30px 10% 30px 10%;
+	}
+}
+.about-content {
+	margin: 25px 10% 10px 5%;
+	h3 {
+		text-align: center;
+	}
+	a.about-contact {
+		right: 20px;
+	}
+}
+.about-profile-img {
+	width: 100%;
+	max-width: 150px;
+	float: none;
+	margin: 0 auto;
+}
+.about-profile {
+	width: 80%;
+	float: none;
+	margin: 0 auto;
+}
+.about-gone {
+	display: none;
+}
+
+/* --- end original nav */
+a.mobile_menu {
+	z-index: 1003;
+	display: block;
+	width: 46px;
+	height: 46px;	
+	position: fixed; 
+	top: 0px; 
+	right: 0px;
+	cursor: pointer;
+
+	// you have to animate the .class off screen so
+	// the div does not remain onscreen potentially
+	// covering any of the dropdown nav that opens
+	// when you click this. - that's why you can't
+	// use a sprite here.
+	background: url(../_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	-webkit-animation: menuToggle 600ms;
+	-moz-animation: menuToggle 600ms;
+	-ms-animation: menuToggle 600ms;
+	-o-animation: menuToggle 600ms;
+	animation: menuToggle 600ms;
+
+
+	// --- working sprite! ---
+	// can't use though - see notes above...
+// 		background-image: url("../_images/scroll-down-sprite.png");
+ //    -webkit-animation: play 2.5s steps(40) infinite;
+ //    -moz-animation: play 2.5s steps(40) infinite;
+ //    -ms-animation: play 2.5s steps(40) infinite;
+ //    -o-animation: play 2.5s steps(40) infinite;
+ //    animation: play 2.5s steps(40) infinite;
+}
+@-webkit-keyframes menuToggle {
+    from 	{ right: -46px; top: -46px; }
+    to 		{ right: 0px; 	top: 0px; 	}
+}
+@-moz-keyframes menuToggle {
+    from 	{ right: -46px; top: -46px; }
+    to 		{ right: 0px; 	top: 0px; 	}
+}
+@-ms-keyframes menuToggle {
+    from 	{ right: -46px; top: -46px; }
+    to 		{ right: 0px; 	top: 0px; 	}
+}
+@-o-keyframes menuToggle {
+    from 	{ right: -46px; top: -46px; }
+    to 		{ right: 0px; 	top: 0px; 	}
+}
+@keyframes menuToggle {
+    from 	{ right: -46px; top: -46px; }
+    to 		{ right: 0px; 	top: 0px; 	}
+}
+a.mobile_menu:hover {
+	opacity: 0.4;
+}
+
+
+
+a.mobile_menu.selected {
+	z-index: 1004;
+	display: block;
+	width: 46px;
+	height: 46px;	
+	position: fixed; 
+	top: -46px; 
+	right: -46px;
+	cursor: pointer;
+
+	// you have to animate the .class off screen so
+	// the div does not remain onscreen potentially
+	// covering any of the dropdown nav that opens
+	// when you click this. - that's why you can't
+	// use a sprite here.
+	background: url(../_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	-webkit-animation: menuToggleUp 900ms;
+	-moz-animation: menuToggleUp 900ms;
+	-ms-animation: menuToggleUp 900ms;
+	-o-animation: menuToggleUp 900ms;
+	animation: menuToggleUp 900ms;
+
+
+	// --- working sprite! ---
+	// can't use though - see notes above...
+// 		background-image: url("../_images/scroll-down-sprite.png");
+ //    -webkit-animation: play 2.5s steps(40) infinite;
+ //    -moz-animation: play 2.5s steps(40) infinite;
+ //    -ms-animation: play 2.5s steps(40) infinite;
+ //    -o-animation: play 2.5s steps(40) infinite;
+ //    animation: play 2.5s steps(40) infinite;
+}
+@-webkit-keyframes menuToggleUp {
+    from 	{ right: 0px; 	top: 0px; 	}
+    to 		{ right: -46px; top: -46px; }
+}
+@-moz-keyframes menuToggleUp {
+    from 	{ right: 0px; 	top: 0px; 	}
+    to 		{ right: -46px; top: -46px; }
+}
+@-ms-keyframes menuToggleUp {
+    from 	{ right: 0px; 	top: 0px; 	}
+    to 		{ right: -46px; top: -46px; }
+}
+@-o-keyframes menuToggleUp {
+    from 	{ right: 0px; 	top: 0px; 	}
+    to 		{ right: -46px; top: -46px; }
+}
+@keyframes menuToggleUp {
+    from 	{ right: 0px; 	top: 0px; 	}
+    to 		{ right: -46px; top: -46px; }
+}
+
+
+
+
+
+.large-screen-gone {
+	display: inline-block;
+}
+
+.first-nav-item {
+	// display: none;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+nav {
+	margin-top: -10px;
+	// background: rgba(255,255,255,.3);
+
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.22) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
+
+	// border-bottom: 1px solid #d9d9d9;
+	border-bottom: 1px solid #999;
+	// border-bottom: none;
+}
+nav ul {
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	display: block;
+	text-align: center;		
+}
+nav ul li a {		
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	margin: 0px;
+	height: 3em;
+	line-height: 2.5em;
+	padding: 9px 12px 9px 12px;	
+	border-radius: 0px;
+	// border: 1px solid red;
+	background: rgba(0,0,0,.6);
+	// box-shadow: -2px 2px 5px #d9d9d9;
+	&:visited {
+		background-color: inherit;
+		}
+	&:hover {
+		color: #fff;
+		text-decoration: none;	
+		background: rgba(0,0,0,.2);		
+		}
+	&:active {
+		background-color: inherit;
+		}		
+}
+.active-nav {
+	color: #fff;
+	text-decoration: none;	
+	background: rgba(0,0,0,.2);			
+}
+.last-nav-item {
+	margin-right: 0;
+}
+
+// contact form
+#fg_box_Title
+{
+   float:left;
+   width:auto;
+   // margin:5px;
+   padding: 15px 0px 15px 15px;
+   line-height: 1.2em;
+   color:#fff;
+   font-family:Verdana,Arial;
+   font-size:12pt;
+   // font-weight:bold;   
+}
+#contactus fieldset
+{
+   width:auto;  
+}
+#fg_formContainer
+{
+   height: auto;
+   width: 250px;
+   // left: 0;
+}
+#contactus input[type="text"]
+{
+  height:18px;
+  width:200px;
+}
+#contactus input[type="email"]
+{
+  height:18px;
+  width:200px;
+}
+#contactus textarea
+{
+  height:120px;
+  width:200px;
+}
+#contactus input[type="submit"]
+{
+   width: 80px;
+   height: 30px;
+   padding-left: 0px;
+   margin-bottom: 15px;
+}
+footer {
+	text-align: center;
+	padding: 0;
+	#footer-info {
+		float: none;
+		margin: 2em auto 0 auto;
+	}
+} 
+#contactus .short_explanation {
+   font-family : Arial, sans-serif;
+   font-size: .8em;
+}
+
+} // end (max-width: 600px) closing tag
+
+
+
+@media screen and (max-width: 560px){
+
+
+// old styling leaving here just because
+// it holds an important lesson.
+// target Safari exclusively --
+_::-moz-svg-foreign-content, :root li.wp-tab a {
+	padding: 5px 10px 4px 10px;
+}
+// Safari has some 1px problem on the 
+// bottom that this addresses
+
+
+.mobile-gone {
+	display: none;
+}
+.large-screen-gone {
+	display: inline-block;
+}
+.wp-logo-gone {
+	display: inline-block;
+}
+h2.mobile {
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #757575;
+	margin: 20px 0px 0px 15px;
+}
+#tab4 {
+	h2 {
+		margin: 20px 0px 0px 15px;
+	}
+}
+} // end (max-width: 560px) closing tag
+
+
+@media screen and (max-width: 500px){
+#div-four {
+	height: 700px;
+}
+.gone {
+	display: inline-block;
+	}
+}
+
+
+@media screen and (max-width: 485px){
+#my-name {
+	top: 55%;	
+	}
+h2.mobile {
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #757575;
+	margin: 20px 0px 0px 15px;
+
+}
+} // end (max-width: 485px) closing tag
+
+@media screen and (max-width: 460px){
+#EWD {
+	.title-text {
+		font-size: 3em;
+	}
+}
+}
+
+@media screen and (max-width: 400px){
+#EWD {
+	.title-text {
+		font-size: 2.5em;
+	}
+}
+ul.staticsites li:last-child {
+	padding: 40px 80px -50px 80px;
+	border-radius: 50%;
+	max-height: 325px;
+}
+.about {
+	h1 {
+		font-size: 2em;
+	}
+}
+} // end (max-width: 400px) closing tag
+
+
+
+@media screen and (max-width: 365px){
+#my-name {
+	top: 58%;	
+}
+h2.mobile {
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #757575;
+	margin: 20px 0px 0px 15px;
+
+}
+ul.staticsites li:last-child {
+	max-height: 275px;
+	p {
+		margin-top: 40%;
+	}
+}
+} // end (max-width: 365px) closing tag
+
+
+
+
+@media screen and (max-width: 355px){
+#div-one {
+// welcome screen
+	height: 650px;
+	// background: #fff url(../_images/sky-small2.jpg) no-repeat center center fixed;
+	// background-size: cover;
+
+	// -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+
+}
+.text-box { 
+	margin: 80px auto 0px auto;
+}
+#my-name {
+	top: 50%;	
+	}
+.website-solutions-badge {
+	max-width: 150px;
+	color: #fff;
+	margin: 15px auto 0px auto;
+
+	h2 {
+		font-size: 1em;
+		line-height: 1.2em;	
+	}	
+}
+h2.mobile {
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #757575;
+	margin: 20px 0px 0px 15px;
+
+}
+
+} // closing (max-width: 355px)

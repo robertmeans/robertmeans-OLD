@@ -1,0 +1,56 @@
+//reset & clearfix
+ul li {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul {
+	list-style: none;
+}
+}.cf { 
+	clear: both; 
+	line-height: 1px;
+}
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;	
+}
+.cf:after {
+	clear: both;	
+}
+.tab-links {
+    margin-top: 10px;
+}
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+.tab-links {
+	margin-bottom: -1px;
+	padding: 0px;
+}
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+.tab-content p {
+    padding: 0px 20px;
+    color: red;
+}
+ul.list-one { 
+    margin: 0px auto;
+    padding: 0; 
+}
+ul.list-one li {
+	list-style-type: disc;
+    display: list-item;
+    margin: 0 1.5em;
+    line-height: 1.5em;
+}

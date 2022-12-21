@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	font-size: 0.9em;
+	color: #000;
+}
+#wrapper {
+	width: 700px;
+	text-align: left;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 30px;
+}

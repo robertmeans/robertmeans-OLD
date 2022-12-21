@@ -1,0 +1,366 @@
+@media only screen and (min-width:50px) and (max-width:500px) {
+
+/* 																		               #small screen
+==================================================================================================== */
+body {
+	color: #666666;
+	line-height: 1.4em;
+	font-family: Tahoma, Arial, Geneva, sans-serif;
+	font-size: 12px;
+	/* background: #515673 url(../_images/background_gradient.jpg) repeat-x 0px 0px;	*/
+}
+
+header { 
+	background: none;
+}
+
+.logo {
+	width: 116px;
+	height: 118px;
+	top: 0px;
+	right: 0px;
+	background-image: url(../_images/logo_small.png);	
+}
+
+.about_page img.shim {
+	display: none;
+}
+
+/* 																		#about page - specific rules
+==================================================================================================== */
+.about_page {
+	max-width: 500px;
+	margin: 0px auto 0px auto;
+	position: relative;
+	background-color: #fff;
+	background: url(../_images/banner_small.jpg) no-repeat left 0px;
+}
+
+.about_header { 
+	background: none;
+}
+
+.about_logo {
+	display: block;
+	position: absolute;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;	
+	width: 19px;
+	height: 272px;
+	top: 0px;
+	right: 0px;
+	background-image: url(../_images/about_logo_small.png);
+}
+/*  --------------------------  end about page css -------------------------- */
+
+article { 
+	padding: 20px 20px 10px 20px; 
+}
+.promo_container { 
+	padding: 0px; 
+}
+.promo_container .promo {
+	width: 100%;
+	float: left;
+	padding: 10px 0px 0px 0px;
+	background-position: 20px 13px;
+	border-top: 1px solid #ccc;
+}
+.promo_container .promo .content { 
+
+	padding: 0px 20px 5px 98px; 
+	position: relative; 
+}
+
+.promo h3 { 
+	font-size: 1.1em; 
+	margin: 0; 
+}
+.promo p { 
+	line-height: 1.3em; 
+	font-size: .9em; 
+	margin-bottom: .6em; 
+}
+
+.content img {
+	float: left;
+	height: 60px;
+	width: 60px;
+	padding: 0px 10px 10px 20px;
+}
+footer {
+	border-top: 1px solid #a6abc5;
+}
+
+body { 
+	background-image: none; 
+}
+
+/* 																	  #contact page - specific rules
+==================================================================================================== */
+
+article#contact {
+	position: relative;
+	margin-left: 10px;
+	
+}
+
+article#contact p {
+	margin-top: 15px;	
+	margin-bottom: 20px;
+}
+
+form    {
+	position:relative;
+	margin-left: 0px;
+
+} 
+
+input    {
+	width: 96%;
+	height: 25px;
+	display:block;
+	border: 1px solid #999;
+	margin: 0px 0px 15px 0px;
+}
+
+textarea:focus, input:focus {
+	border: 1px solid #09C;
+}
+
+textarea#feedback {
+	width: 95%;
+	height: 150px;
+
+
+}
+textarea.message {
+	display: block;
+
+}
+
+input#send {
+	float: left;
+	width: 100px;
+	height:26px;
+	display:block;
+	border: 1px solid #999;
+	margin: 5px 20px 15px 0px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	background:#fff;
+	color:#666;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+input#send:hover {
+	background:#0f5588;
+	color:#fff;
+}
+
+input#clear    {
+	float: left;
+	width: 100px;
+	height:26px;
+	display:inline;
+	border: 1px solid #999;	
+	margin: 5px 0px 30px 0px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);	
+	background:#fff;
+	color:#666;	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+}
+
+input#clear:hover {
+	background:#1f5588;
+	color:#fff;
+}
+
+/* 													                        #navigation small screen
+==================================================================================================== */
+
+#hero {
+	height: 110px;
+	background: url(../_images/banner_small.jpg) no-repeat left 0px;
+}
+
+#hero .panel .caption h4 {
+	color: #5b5b5b;
+	font-size: 2.5em;
+	line-height: 1em;
+	margin: 32px 0px 0px 70px;
+	position: absolute;
+	color: #5b5b5b;
+	font-family: Calibri, Tahoma, Arial, Geneva, sans-serif;
+	font-weight: bold;
+}
+#hero .panel .caption h4 a {
+	color: #5b5b5b;
+	text-decoration: none;	
+}
+#hero .panel .caption h4 a:hover {
+	color: #1D64AA;
+	text-decoration: none;	
+}
+
+a.mobile_menu {
+	display: block;
+	width: 38px;
+	height: 43px;	
+	background: url(../_images/mobile_link_menu.png) no-repeat 0px 0px;
+	position: absolute; top: 76px; right: 60px;
+	cursor: pointer;
+}
+a.mobile_menu.selected {
+	background: url(../_images/mobile_link_menu_mo.png) no-repeat 0px 0px;	
+}
+
+nav {
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	display: block;
+	text-align: center;		
+}
+
+nav a {		
+	color: #fff;
+	display: inline-block;
+	width: 45px;
+	text-align: center;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 9px 10px 9px 10px;	
+	border: 1px solid #a6abc5;
+	
+	background: #1e5799 url(../_images/mobile_link_arrow.png) no-repeat right center; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 47%, #207cca 56%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(47%,#2989d8), color-stop(56%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 47%,#207cca 56%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 47%,#207cca 56%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 47%,#207cca 56%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 47%,#207cca 56%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+	
+	box-shadow: -2px 2px 5px #d9d9d9;		
+}
+nav a:hover {
+	color: #fff;
+	/* background-color: #a6abc5; */
+	text-decoration: none;	
+	
+	background: #0097d3; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  #0097d3 0%, #2989d8 51%, #207cca 53%, #00325b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0097d3), color-stop(51%,#2989d8), color-stop(53%,#207cca), color-stop(100%,#00325b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0097d3 0%,#2989d8 51%,#207cca 53%,#00325b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0097d3 0%,#2989d8 51%,#207cca 53%,#00325b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0097d3 0%,#2989d8 51%,#207cca 53%,#00325b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0097d3 0%,#2989d8 51%,#207cca 53%,#00325b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0097d3', endColorstr='#00325b',GradientType=0 ); /* IE6-8 */
+
+	
+	
+}
+
+/* 													                                    #video small
+==================================================================================================== */
+
+.video_content_container {
+	padding: 15px 0 10px 2%;
+	border-top: 1px solid #ccc;
+}
+.first_video_content_container {
+	padding: 15px 0 10px 2%;
+}
+.video_intro {
+	padding-bottom: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.video_images {
+	display: none;
+	width: 25%;
+	float: left;
+}
+.video_content {
+	position: relative;
+	width: 63%;
+	float: right;
+	padding: 0 2% 0 2%;		
+}
+iframe {
+	display: block;	
+}
+.view_hd {
+	display: block;
+	font-size: 10px;
+	line-height: 9px;
+	margin-top: 20px;
+	text-align: left;
+	bottom: 0px;
+	left: 0px;
+	color: #757575;	
+}
+.shadow_break {
+	visibility: hidden;
+	display: block;
+	padding-top: 0px;
+	margin: 5px auto 15px auto;
+}
+
+
+.website_container {
+	position: relative;
+	float: left;
+	clear: right;
+	width: 100%;
+	max-width: 980px;
+	margin: 18px auto 0px auto;
+}
+.website_container p.line-break {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #ccc;
+}
+.website_images {
+	width: 90%;
+	max-width: 180px;
+	padding-left: 0;
+	margin: 0 auto;
+	float: none;
+	clear: both;
+}
+.website_description {
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: -10px auto 0 auto;
+	position: relative;
+	float: left;
+	clear: right;
+}
+.website_container h2 {
+	color: #900;
+	line-height: 1em;
+	margin-top: -20px;
+}
+.video_website_intro {
+	margin: .5em auto .5em auto;
+	width: 85%;
+	padding: .5em 1em;
+	border-radius: 8px;
+	border: 1px solid #999110;
+	background: #ff0;
+}
+}

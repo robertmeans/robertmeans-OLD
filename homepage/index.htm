@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META Http-Equiv="Cache-Control" Content="no-cache" />
+<META Http-Equiv="Pragma" Content="no-cache" />
+<META Http-Equiv="Expires" Content="0" />
+<!-- the following meta is so IE can render border-radius... give me a freakin' break! -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/scripts.js"></script>
+
+<title>Homepage</title>
+</head>
+
+<body onload="getTime(); clearForms(); setFocus();">
+
+<script type="text/javascript">var MenuLinkedBy="AllWebMenus [4]",awmMenuName="shopping",awmBN="902";</script><script charset="UTF-8" src="menuFiles/shopping.js" type="text/javascript"></script><script type="text/javascript">awmBuildMenu();</script>
+<script type="text/javascript">var MenuLinkedBy="AllWebMenus [4]",awmMenuName="searchEngines",awmBN="902";</script><script charset="UTF-8" src="menuFiles/searchEngines.js" type="text/javascript"></script><script type="text/javascript">awmBuildMenu();</script>
+
+<div id="wrapper">
+<div id="todaysDate">
+
+<script language="JavaScript">
+<!-- begin
+todayIs(); document.write("Today is " +today);
+// end -->
+</script>
+
+<br />
+
+Pacific <span id=pacific></span>&nbsp;&nbsp;|&nbsp;&nbsp;Mountain  <span id=mountain></span>&nbsp;&nbsp;|&nbsp;&nbsp;Central <span id=central></span>&nbsp;&nbsp;|&nbsp;&nbsp;Eastern <span id=eastern></span>
+
+</div><!-- todaysDate -->
+
+<div id="scalpel"><a href="http://www.epicsingletrack.com/"><img src="images/scalpel.jpg" border="0" alt="Ride yo ass off!" width="32" height="55" /></a></div><!-- scalpel end -->
+
+<div id="urlBar">
+
+    <form name="urlField" onsubmit="window.location.href = document.getElementById('addressfield').value; return false;">
+      <span class="blackTxt">URL&nbsp; </span>
+      <input type="text" name="address" id="addressfield" maxlength=255 style="width:339px; height:16px; font-family:tahoma; font-size:10pt;" tabindex="1" />
+    </form>
+
+</div><!-- urlBar -->
+
+<div id="bingBar"><span class="BingGoogleDictTxt"><a class="bing" href="http://www.bing.com">Bing</a></span>
+
+    <form name="bing" method="get" onSubmit="return submitBing();">
+        <input type="hidden" name="cp" value="CODE PAGE USED BY YOUR HTML PAGE" />
+        <input type="hidden" name="FORM" value="FREEWS" />
+        <input type="text" name="q" maxlength=255 style="width:204px; height:16px; font-family:tahoma; font-size:10pt;" value="" tabindex="2" />&nbsp;
+        
+        <input type="radio" name="bingRadio" id="bingImages" /> <a class="dictionary" href="http://www.bing.com/images">Images</a>
+        <input type="radio" name="bingRadio" id="bingMaps" /> <a class="dictionary" href="http://www.bing.com/maps">Maps</a>
+        
+        <input type="submit" value="Go" style="font-size:10pt; font-family: tahoma,arial,helvetica,sans-serif;" />
+    </form>
+
+</div><!-- bingBar -->
+ 
+<div id="googleBar"><span class="BingGoogleDictTxt"><a class="bing" href="http://www.google.com">Google</a></span>
+
+	<form name="google" method="get" onSubmit="return submitGoogle();">
+		<input type="text" name="q" maxlength=255 style="width:204px; height:16px; font-family:tahoma; font-size:10pt;" value="" tabindex="3" />&nbsp;
+        
+        <input type="radio" name="googleRadio" id="googleImages" /> <a class="dictionary" href="http://www.google.com/images">Images</a>
+        <input type="radio" name="googleRadio" id="googleMaps" /> <a class="dictionary" href="https://www.google.com/maps">Maps</a>
+                    
+        <input type="submit" value="Go" style="font-size:10pt; font-family: tahoma,arial,helvetica,sans-serif;" />
+	</form>
+
+</div><!-- googleBar -->
+   
+<div id="referenceBar"><span class="BingGoogleDictTxt"><a class="youtube" href="http://thesaurus.com">Thesaurus</a>: </span>
+
+	<form name="reference" method="get" onSubmit="return OnSubmitForm();">
+    	<input type="hidden" name="thesaurus" value="1" checked="checked" /> <input type="text" name="q" id="q" maxlength=260 style="width:151px; height:16px; font-family:tahoma; font-size:10pt;" tabindex="4" /> <input type="radio" name="dictionary" /> <a class="dictionary" href="http://dictionary.reference.com">Dictionary</a> &nbsp;&nbsp;<input type="submit" name="submit" value="Go" style="font-size:10pt; font-family: tahoma,arial,helvetica,sans-serif;" />
+	</form>
+
+</div><!-- referenceBar -->
+<div id="linkBoxWrapper">
+<div id="leftGutter">&nbsp;</div><!-- leftGutter -->
+
+<!-- ***************************************************** row 1 begin **************************************************** -->   
+<div id="shopping">&nbsp;</div><!-- shopping -->
+    
+<div id="searchEngines">&nbsp;</div><!-- searchEngines -->
+    
+  	<span class="linkBox"><a href="http://www.whitepages.com/9901/reverse_phone" class="textNav">Reverse Lookup</a></span>
+  	<span class="linkBoxRightEnd"><a href="http://www.godaddy.com/" class="textNav">GoDaddy</a></span>
+<!-- ****************************************************** row 1 end ***************************************************** -->
+
+<!-- ***************************************************** row 2 begin **************************************************** -->    
+	<span class="linkBox"><a href="http://www.lynda.com" class="textNav">Lynda</a></span>
+	<span class="linkBox"><a href="https://www4.usbank.com/internetBanking/RequestRouter?requestCmdId=DisplayLoginPage" class="textNav">US Bank</a></span>
+    <span class="linkBox"><a href="http://www.worth1000.com/" class="textNav">W1k</a></span>
+    <span class="linkBoxRightEnd"><a href="http://www.robertmeans.com/" class="textNav">RHM</a> | <a href="http://www.stantonmeans.com/" class="textNav">SHM</a> | <a href="http://www.meredithmeans.com/" class="textNav">MMM</a></span>
+<!-- ****************************************************** row 2 end ***************************************************** -->
+
+<!-- ***************************************************** row 3 begin **************************************************** -->    
+    <span class="linkBox"><a href="http://keepvid.com/" class="textNav">Keepvid</a></span>
+    <span class="linkBox"><a href="https://www.efirstbank.com/" class="textNav">1st Bank</a></span>
+    <span class="linkBox"><a href="http://www.teamevergreen.org/" class="textNav">Team Evergreen</a></span>
+    <span class="linkBoxRightEnd"><a href="http://www.metric-conversions.org/" class="textNav">Metric Conversion</a></span>
+<!-- ****************************************************** row 3 end ***************************************************** -->
+
+<!-- ***************************************************** row 4 begin **************************************************** -->    
+    <span class="linkBox"><a href="http://www.youtube.com/watch?v=dH-1JZ2jKSo&amp;feature=plcp" class="textNav">YT</a> | <a href="http://www.youtube.com/watch?v=5Q_akWyekoY&amp;feature=plcp" class="textNav">F</a> | <a href="http://www.youtube.com/watch?v=rFzUNkrQknw" class="textNav">F2</a> | <a href="http://www.youtube.com/watch?v=Z8WOMtcydSE" class="textNav">XM</a></span>
+    <span class="linkBox"><a href="http://www.google.com/voice" class="textNav">Google Voice</a></span>
+    <span class="linkBox"><a href="http://jeffcolibrary.org/catalog.html" class="textNav">Library</a></span>
+    <span class="linkBoxRightEnd"><a href="http://jeffco.us/ats/addresssearch.do" class="textNav">Assessor&acute;s Office</a></span>
+<!-- ****************************************************** row 4 end ***************************************************** -->
+
+<!-- ***************************************************** row 5 begin **************************************************** -->    
+    <span class="linkBox"><a href="http://localhost/home" class="textNav">Home - local</a></span>
+    <span class="linkBox"><a href="http://www.computerhope.com/areacode.htm" class="textNav">Area codes</a></span>
+    <span class="linkBox"><a href="http://forums.mtbr.com/forumdisplay.php?f=70" class="textNav">mtbr.com</a></span>
+    <span class="linkBoxRightEnd"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=39.719%2C-105.197" class="textNav">GrnMtn</a> | <a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=39.621%2C-105.422&amp;MR=1" class="textNav">Evrgrn</a></span>
+<!-- ****************************************************** row 5 end ***************************************************** -->
+
+<!-- ***************************************************** row 6 begin **************************************************** -->    
+    <span class="linkBox"><a href="http://www.robertmeans.com/home" class="textNav">Home - online</a></span>
+    <span class="linkBox"><a href="http://www.facebook.com/" class="textNav">F</a> | <a href="https://twitter.com/" class="textNav">T</a> | <a href="http://www.pof.com/" class="textNav">P</a> | <a href="http://www.okcupid.com/home" class="textNav">O</a></span>
+  	<span class="linkBox"><a href="http://king-murphy.ccsdre1.org/" class="textNav">King Murphy</a></span>
+  	<span class="linkBoxRightEnd"><a href="http://www.vistawide.com/languages/typing_foreign_language_characters.htm" class="textNav">diacritical marks</a></span>
+<!-- ****************************************************** row 6 end ***************************************************** -->
+
+<div id="youtubeBar"><span class="BingGoogleDictTxt"><a class="youtube" href="http://www.youtube.com"> YouTube</a></span>
+
+    <form action="http://www.youtube.com/results" method="get">
+        <input name="search_query" type="text" maxlength=255 style="width:249px; height:16px; font-family:tahoma; font-size:10pt;" tabindex="5" />
+    
+        <input type="submit" value="Go" style="font-size:10pt; font-family: tahoma,arial,helvetica,sans-serif;" />
+    </form>  
+</div><!-- youtubeBar --> 
+
+<div id="messagesBar"><a class="addLink" href="javascript:AddItem()" onMouseOver="window.status='Leave a message.'; return true;" onMouseOut="window.status=''; return true;">Notes</a></div><!-- messagesBar -->
+
+<div id="messageItems">
+    <table width="100%">
+        <script language="JavaScript">
+        <!-- begin
+        ListToDoItems();
+        //  end -->
+        </script>
+    </table>
+</div><!-- messageItems -->
+
+</div><!-- linkBoxWrapper -->
+</div><!-- wrapper end -->
+</body>
+</html>

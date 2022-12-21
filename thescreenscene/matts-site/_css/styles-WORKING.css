@@ -1,0 +1,1114 @@
+@charset "IBM437";
+/*
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * Dreamweaver modifications:
+ * 1. Commented out selection highlight
+ * 2. Removed media queries section (we add our own in a separate file)
+ *
+ * ==|== normalize ==========================================================
+ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+@import url("http://fonts.googleapis.com/css?family=Shadows+Into+Light|Maven+Pro");
+/* line 24, ../components/sass/_boilerplate.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 27, ../components/sass/_boilerplate.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 32, ../components/sass/_boilerplate.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 35, ../components/sass/_boilerplate.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 48, ../components/sass/_boilerplate.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 54, ../components/sass/_boilerplate.scss */
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.231;
+}
+
+/* line 60, ../components/sass/_boilerplate.scss */
+body, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #757575;
+}
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+/* Dreamweaver: uncomment these if you do want to customize the selection highlight
+ *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+ */
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*a {
+color: #00e;
+}
+a:visited {
+color: #551a8b;
+}
+a:hover {
+color: #06e;
+}
+a:focus {
+outline: thin dotted;
+}*/
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+/* line 92, ../components/sass/_boilerplate.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/* line 99, ../components/sass/_boilerplate.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 102, ../components/sass/_boilerplate.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 105, ../components/sass/_boilerplate.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 108, ../components/sass/_boilerplate.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 111, ../components/sass/_boilerplate.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 119, ../components/sass/_boilerplate.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 124, ../components/sass/_boilerplate.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Redeclare monospace font family: h5bp.com/j */
+/* line 131, ../components/sass/_boilerplate.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+/* line 137, ../components/sass/_boilerplate.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 142, ../components/sass/_boilerplate.scss */
+q {
+  quotes: none;
+}
+
+/* line 145, ../components/sass/_boilerplate.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 149, ../components/sass/_boilerplate.scss */
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 153, ../components/sass/_boilerplate.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 159, ../components/sass/_boilerplate.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 162, ../components/sass/_boilerplate.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 169, ../components/sass/_boilerplate.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 173, ../components/sass/_boilerplate.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 176, ../components/sass/_boilerplate.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+/* line 191, ../components/sass/_boilerplate.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+/* line 200, ../components/sass/_boilerplate.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/* line 207, ../components/sass/_boilerplate.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* line 214, ../components/sass/_boilerplate.scss */
+form {
+  margin: 0;
+}
+
+/* line 217, ../components/sass/_boilerplate.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+/* line 223, ../components/sass/_boilerplate.scss */
+label {
+  cursor: pointer;
+}
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+/* line 231, ../components/sass/_boilerplate.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+/* line 242, ../components/sass/_boilerplate.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+/* line 253, ../components/sass/_boilerplate.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+/* line 261, ../components/sass/_boilerplate.scss */
+table button, table input {
+  *overflow: auto;
+}
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+/* line 269, ../components/sass/_boilerplate.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/*
+ * Consistent box sizing and appearance
+ */
+/* line 277, ../components/sass/_boilerplate.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/* line 280, ../components/sass/_boilerplate.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 286, ../components/sass/_boilerplate.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+/* line 294, ../components/sass/_boilerplate.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+/* line 303, ../components/sass/_boilerplate.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* Colors for form validity */
+/* line 312, ../components/sass/_boilerplate.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* line 319, ../components/sass/_boilerplate.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 323, ../components/sass/_boilerplate.scss */
+td {
+  vertical-align: top;
+}
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+/* line 350, ../components/sass/_boilerplate.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 360, ../components/sass/_boilerplate.scss */
+.ir br {
+  display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* line 364, ../components/sass/_boilerplate.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* line 369, ../components/sass/_boilerplate.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* line 380, ../components/sass/_boilerplate.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 389, ../components/sass/_boilerplate.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: h5bp.com/q */
+/* line 393, ../components/sass/_boilerplate.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 397, ../components/sass/_boilerplate.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 400, ../components/sass/_boilerplate.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 411, ../components/sass/_boilerplate.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 418, ../components/sass/_boilerplate.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 421, ../components/sass/_boilerplate.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 424, ../components/sass/_boilerplate.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 427, ../components/sass/_boilerplate.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 430, ../components/sass/_boilerplate.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 434, ../components/sass/_boilerplate.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 437, ../components/sass/_boilerplate.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 440, ../components/sass/_boilerplate.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 446, ../components/sass/_boilerplate.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 450, ../components/sass/_boilerplate.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 8, ../components/sass/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../components/sass/_base.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 16, ../components/sass/_base.scss */
+.cf:after {
+  clear: both;
+}
+
+/* for ie 6/7 (trigger hasLayout) */
+/* line 20, ../components/sass/_base.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 1, ../components/sass/_fluid.scss */
+body {
+  font-family: Georgia, Times New Roman, serif;
+  font-size: 16px;
+  line-height: 1em;
+  color: #757575;
+  background: #fff;
+  background-image: url(../_images/lg-bkg.jpg);
+  background-repeat: repeat-x;
+}
+
+/* line 11, ../components/sass/_fluid.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 15, ../components/sass/_fluid.scss */
+.cf:after {
+  clear: both;
+}
+
+/* for ie 6/7 (trigger hasLayout) */
+/* line 19, ../components/sass/_fluid.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 22, ../components/sass/_fluid.scss */
+#wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+/* line 28, ../components/sass/_fluid.scss */
+.headline {
+  float: left;
+  display: block;
+  margin-top: 92px;
+  width: 70%;
+  width: 65%;
+  font-family: Myriad Web Pro;
+  color: #726f42;
+  font-size: 2.8em;
+  font-weight: bold;
+  padding-left: 4.58333%;
+}
+
+/* line 46, ../components/sass/_fluid.scss */
+.phone {
+  float: right;
+  display: block;
+  margin-top: 98px;
+  font-family: Myriad Web Pro;
+  color: #726f42;
+  font-size: 1.4em;
+  font-weight: bold;
+  width: 24%;
+  padding-right: 6%;
+  text-align: right;
+}
+
+/* line 59, ../components/sass/_fluid.scss */
+#bannerImg {
+  width: 100%;
+}
+
+/* line 62, ../components/sass/_fluid.scss */
+.banner {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+/* line 67, ../components/sass/_fluid.scss */
+.banner img {
+  width: 100%;
+}
+
+/* line 70, ../components/sass/_fluid.scss */
+.lawfields {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  color: #918546;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 3px;
+  border: 1px solid #918546;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 87, ../components/sass/_fluid.scss */
+.familylaw-home {
+  float: left;
+  margin-left: 3.91667%;
+  width: 29.75%;
+}
+
+/* line 92, ../components/sass/_fluid.scss */
+.civillaw-home, .criminallaw-home {
+  float: left;
+  margin-left: 1.6667%;
+  width: 29.75%;
+}
+
+/* line 97, ../components/sass/_fluid.scss */
+.fieldwrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+/* line 105, ../components/sass/_fluid.scss */
+.field-intro {
+  float: left;
+  font-family: Georgia;
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #918546;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 119, ../components/sass/_fluid.scss */
+h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* line 123, ../components/sass/_fluid.scss */
+nav h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 127, ../components/sass/_fluid.scss */
+a {
+  text-decoration: none;
+  color: #667F6A;
+  border-bottom: 1px dotted #667F6A;
+}
+/* line 131, ../components/sass/_fluid.scss */
+a:hover {
+  color: #7B798F;
+  border-bottom: 1px solid #7B798F;
+}
+
+/* line 136, ../components/sass/_fluid.scss */
+#footer {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+  font-family: Georgia;
+  background: #7b7741;
+  background-image: url(../_images/footer-bkg.jpg);
+  background-repeat: repeat-x;
+}
+
+/* line 148, ../components/sass/_fluid.scss */
+#footer-content {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  color: white;
+  text-align: left;
+  padding-top: 45px;
+}
+
+/* line 155, ../components/sass/_fluid.scss */
+.footer-content-left {
+  display: block;
+  float: left;
+  margin-left: 4.58333%;
+  width: 35%;
+  padding-bottom: 45px;
+}
+
+/* line 162, ../components/sass/_fluid.scss */
+.footer-content-right {
+  display: block;
+  float: left;
+  width: 60%;
+}
+
+/* line 167, ../components/sass/_fluid.scss */
+#footer a {
+  color: inherit;
+}
+/* line 169, ../components/sass/_fluid.scss */
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/*---------------------------base navigation styles */
+/* line 174, ../components/sass/_fluid.scss */
+#mainNav h2, #mainNav #menuToggle {
+  display: none;
+}
+
+/* line 177, ../components/sass/_fluid.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 180, ../components/sass/_fluid.scss */
+#mainNav {
+  float: left;
+  position: relative;
+  margin-bottom: .5em;
+  width: 95%;
+  margin-left: 3%;
+  max-width: 1200px;
+}
+
+/* line 188, ../components/sass/_fluid.scss */
+#mainNav li {
+  float: left;
+}
+
+/* line 191, ../components/sass/_fluid.scss */
+#mainNav a, #mainNav h3 {
+  display: block;
+  color: #7a7741;
+  border: none;
+}
+
+/* line 196, ../components/sass/_fluid.scss */
+#mainNav a:hover {
+  color: #7a7741;
+}
+
+/* line 199, ../components/sass/_fluid.scss */
+#mainNav a.current {
+  color: #7a7741;
+  cursor: default;
+}
+
+/* all the sizes for shrinking title */
+@media only screen and (max-width: 1170px) {
+  /* line 206, ../components/sass/_fluid.scss */
+  .headline {
+    margin-top: 92px;
+    font-size: 2.4em;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  /* line 213, ../components/sass/_fluid.scss */
+  .headline {
+    margin-top: 92px;
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /*disable text sizing on orientation change*/
+  /* line 235, ../components/sass/_fluid.scss */
+  html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 238, ../components/sass/_fluid.scss */
+  body {
+    background-image: none;
+  }
+
+  /* line 241, ../components/sass/_fluid.scss */
+  .headline {
+    float: left;
+    position: relative;
+    clear: right;
+    margin-top: 12px;
+    line-height: 1em;
+    width: 90%;
+  }
+
+  /* line 249, ../components/sass/_fluid.scss */
+  .phone {
+    float: left;
+    clear: left;
+    width: 90%;
+    margin-left: 4.5333%;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  /* line 257, ../components/sass/_fluid.scss */
+  .familylaw-home {
+    float: none;
+    margin: 0 auto 0 auto;
+    width: 92%;
+  }
+
+  /* line 262, ../components/sass/_fluid.scss */
+  .civillaw-home, .criminallaw-home {
+    float: none;
+    margin: 0 auto 0 auto;
+    width: 92%;
+  }
+
+  /* line 267, ../components/sass/_fluid.scss */
+  .lawfields {
+    margin-top: 10px;
+    margin-bottom: 1px;
+    background: #918546;
+    color: #fff;
+  }
+
+  /*mobile navigation styles*/
+  /* line 274, ../components/sass/_fluid.scss */
+  #mainNav {
+    /*width: auto; ---- this causes the toggle to disappear - ?*/
+    width: 100%;
+    font-family: Myriad Web Pro;
+    margin: 0;
+    background: white;
+    overflow: hidden;
+  }
+
+  /* line 282, ../components/sass/_fluid.scss */
+  #mainNav li {
+    margin: 0;
+    float: none;
+    position: relative;
+  }
+
+  /* line 287, ../components/sass/_fluid.scss */
+  .topMenu {
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  /* line 291, ../components/sass/_fluid.scss */
+  .topMenu.expand {
+    max-height: 900em;
+    visibility: visible;
+  }
+
+  /* line 295, ../components/sass/_fluid.scss */
+  #mainNav a, #mainNav h3 {
+    font-size: 1.2em;
+    text-align: left;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    background: #c6c37e;
+    line-height: 2.2em;
+    cursor: pointer;
+  }
+
+  /* line 307, ../components/sass/_fluid.scss */
+  #mainNav a:hover, #mainNav h3:hover {
+    background: #7a7741;
+  }
+
+  /* line 310, ../components/sass/_fluid.scss */
+  #mainNav a:hover {
+    color: white;
+  }
+
+  /* line 313, ../components/sass/_fluid.scss */
+  #mainNav a.current {
+    color: #ede4d6;
+  }
+
+  /* line 316, ../components/sass/_fluid.scss */
+  #mainNav span.indicator {
+    padding-left: 10px;
+    position: absolute;
+  }
+
+  /*--------mobile dropdown navigation styles*/
+  /* line 323, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu {
+    float: none;
+    width: auto;
+    height: auto;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+  }
+
+  /* line 332, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu.expand {
+    max-height: 20em;
+  }
+
+  /* line 335, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li a {
+    padding: .2em 1em;
+    white-space: nowrap;
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 3em;
+  }
+
+  /* line 344, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li a:hover {
+    background: #a2a0a5;
+  }
+
+  /* line 347, ../components/sass/_fluid.scss */
+  #mainNav .menuToggle {
+    display: block;
+    background: #4c4341;
+    width: 100%;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    position: relative;
+  }
+
+  /* line 356, ../components/sass/_fluid.scss */
+  .menuToggle a {
+    text-align: center;
+    padding: 0;
+  }
+}
+/* Large Layout: 801+. Inherits styles from: Small Layout. */
+@media only screen and (min-width: 851px) {
+  /* large nav styles*/
+  /* line 366, ../components/sass/_fluid.scss */
+  #mainNav {
+    font-family: Myriad Web Pro;
+    float: left;
+    position: relative;
+    max-width: 1200px;
+    padding-top: 14px;
+    margin-bottom: 0;
+    background: #c6c37e;
+    background-image: url(../_images/nav.jpg);
+    background-repeat: no-repeat;
+  }
+
+  /* line 377, ../components/sass/_fluid.scss */
+  #largeMenu {
+    line-height: 2em;
+    height: 2em;
+    background: #c6c37e;
+  }
+
+  /* line 382, ../components/sass/_fluid.scss */
+  #mainNav li {
+    margin-right: 4%;
+    position: relative;
+  }
+
+  /* line 386, ../components/sass/_fluid.scss */
+  #mainNav li:last-child {
+    margin-right: 0;
+  }
+
+  /* line 389, ../components/sass/_fluid.scss */
+  #mainNav a, #mainNav h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  /* line 396, ../components/sass/_fluid.scss */
+  #mainNav a:hover, #mainNav h3:hover {
+    color: #3a3500;
+    position: relative;
+  }
+
+  /*#mainNav a:hover {
+  	cursor: pointer;
+  }*/
+  /* line 403, ../components/sass/_fluid.scss */
+  #mainNav h3:hover {
+    cursor: default;
+  }
+
+  /*dropdown menu styles*/
+  /* line 407, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu {
+    float: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 2em;
+    padding-top: .3em;
+    left: -9000em;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  /* line 421, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu a:hover {
+    height: auto;
+    top: 0;
+  }
+
+  /* line 425, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li {
+    float: none;
+    margin: 0;
+    background: #3a3500;
+    background: rgba(58, 53, 0, 0.9);
+  }
+
+  /* line 431, ../components/sass/_fluid.scss */
+  #mainNav li.hover:hover ul, #mainNav ul.submenu.expand {
+    left: 9%;
+    max-height: 20em;
+  }
+
+  /*#mainNav li:hover ul {
+  	left: 0;
+  	max-height: 20em;
+  }*/
+  /* line 439, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li a {
+    border-bottom: 1px solid white;
+    padding: .2em 1em;
+    white-space: nowrap;
+    color: white;
+    text-align: left;
+    font-size: 1.1em;
+  }
+
+  /* line 447, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li:last-child a {
+    border-bottom: none;
+  }
+
+  /* line 450, ../components/sass/_fluid.scss */
+  #mainNav ul.submenu li a:hover {
+    background: #c6c37e;
+    border-radius: 0;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 456, ../components/sass/_fluid.scss */
+  #mainNav a, #mainNav h3 {
+    padding: 0 4.58333%;
+  }
+}

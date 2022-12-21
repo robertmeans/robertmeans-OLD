@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	font-weight: 400;
+}
+#home_container {
+	background-color: #bacde7;
+	width: 520px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-left: 50px;
+	font-family: Tahoma, Arial;
+	font-size: 13px;
+	color: #333;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	padding-right: 50px;
+}
+/* floatlayer is needed for floatLayer.js to remove this div from DOM
+and allow for use as a form. */
+#floatlayer {
+	width: 141px;
+	left: -81px;
+	top: 48px;
+			
+}
+/* now I start packing everything in order to apply dropshadows and
+style the hoot out of this form. */
+#floatlayerTop {
+	width: 111px;
+	height: 147px;
+	
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;	
+	
+	box-shadow: 0px 0px 15px #707070;
+	-moz-box-shadow: 0px 0px 15px #707070; /* Firefox */
+	-webkit-box-shadow: 0px 0px 15px #707070; /* Safari, Chrome */	
+}
+
+
+#columnHeader {
+	background: #ffffff;
+	width: 109px;
+	float: left;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;			
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;				
+	border-top-color: #9d9d9d;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;	
+}
+/* the rows are containers for the columns (column1, column2...) I was messing around
+with dropshadows just using rows but they cast upon themselves so I had to bundle it 
+all up in floatlayerTop and floatlayerBottom. - still left the column1... in case
+I need it in the future. */
+#row1 {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+
+	
+	background: #9bc0e6;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;
+	
+		
+		
+}
+#row2 {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+
+	background: #b2cbe4;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;	
+}
+#row3 {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+
+	background: #cad6e2;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;	
+}
+#row4 {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+
+	background: #dee0e1;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;
+}
+#rowSpacer {
+	width: 109px;
+	height: 206px;
+	float: left;
+	background-image: url(../images/floatform_rowSpacer.png);
+	background-repeat: no-repeat;
+}
+#row5 {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+
+	background: #f3f2f2;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;	
+}
+.column1 {
+	width: 20px;
+	float: left;
+	padding-left: 2px;		
+}
+.column2 {
+	width: 21px;
+	float: left;	
+}
+.column3 {
+	width: 21px;
+	float: left;	
+}
+.column4 {
+	width: 21px;
+	float: left;	
+}
+.column5 {
+	width: 21px;
+	float: left;
+	padding-right: 3px;
+}
+
+#submitBtn {
+	width: 109px;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	-moz-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #9d9d9d;
+	border-right-width: 1px;
+	border-left-width: 1px;	
+	border-left-style: solid;
+	border-right-style: solid;
+	border-left-color: #9d9d9d;
+	border-right-color: #9d9d9d;
+
+	align: center;	
+	text-align: center;						
+}
+#floatlayerBottom {
+	width: 111px;
+	height: 66px;
+	float: left;
+	
+	-moz-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;	
+	
+	box-shadow: 0px 0px 15px #707070;
+	-moz-box-shadow: 0px 0px 15px #707070; /* Firefox */
+	-webkit-box-shadow: 0px 0px 15px #707070; /* Safari, Chrome */		
+}

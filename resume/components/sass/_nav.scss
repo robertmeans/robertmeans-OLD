@@ -1,0 +1,208 @@
+
+/* .nav-wrap is in custom.scss nested in #cv
+*/
+  .nav-absolute {
+    position: absolute;
+    top: 160px;
+    width: 97%;
+    max-width: 1030px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a {
+      display: flex;
+      text-decoration: none;
+      color: #313131;
+      width: 170px;
+      background-color: rgba(52,69,100,0.64);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    a.nav-link.current-page {
+      background-color: rgba(58,97,122,1);
+      cursor: default;
+    }
+  }
+  .nav-fixed {
+    position: fixed;
+    top: 5px;
+    width: 97%;
+    max-width: 1030px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a {
+      display: flex;
+      text-decoration: none;
+      color: #313131;
+      width: 170px;
+
+      background-color: rgba(52,69,100,0.64);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    a.nav-link.current-page {
+      background-color: rgba(58,97,122,1);
+    }
+  }
+.navigation {
+  position: relative;
+  right: -120px;
+  margin-right: -5px;
+  margin-top: 1px;
+  transition: right 0.3s ease-in-out;
+}
+
+.navigation:hover {
+  right: 0;
+  margin-right: 5px;
+}
+
+.nav-box {
+  display: flex;
+}
+#toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('_images/nav-toggle.jpg');
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    border: 1px solid #5b4439;
+    box-shadow: -3px 3px 4px 0px rgba(0,0,0,0.3); 
+    z-index: 20; 
+}
+a.current-page > #toggle-menu {
+  // background: url('_images/parchment-paper-toggle-current.jpg');
+}
+a.current-page > #toggle-menu > i {
+  color: #1b6a8f;
+  color: rgba(147,6,6,1);
+
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  color: #fff;
+  z-index: 15; 
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .nav-absolute,
+  .nav-fixed {
+    position: fixed;
+    top: auto;
+    bottom: 2px;
+    width: 99%;
+    max-width: 1030px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+    z-index: 10;
+    // display: flex; /* already declared */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: flex;
+      text-decoration: none;
+      color: #313131;
+      width: auto;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .navigation {
+    width: auto;
+    right: auto;
+    margin: 0 1px;
+    flex: 1 1 0;
+      & a.nav-link {
+        background-color: rgba(52,69,100,0.64);
+        flex-grow: 1;
+        // border-top: 3px solid transparent;
+      }
+      & a.nav-link.current-page {
+        background-color: rgba(58,97,122,1);
+        // border-top: 3px solid blue;
+      }      
+  }
+  .navigation:hover {
+    margin: 0px 1px;
+  }
+  #toggle-menu {
+    display: none;
+  }
+  a.current-page > #toggle-menu {
+    display: none;
+  }
+  .menu-title {
+    background-color: transparent;
+    margin: 0 auto;
+    padding-top: 0px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    a.nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+  }
+  #toggle-menu,
+  a.current-page > #toggle-menu,
+  a.current-page > #toggle-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  #toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    // width: auto;
+    // height: auto;
+  }
+  .menu-title {
+    display: none;
+  }
+}

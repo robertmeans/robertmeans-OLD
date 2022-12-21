@@ -1,0 +1,542 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	background-image: url(images/woodTile_05.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-size: 1em;
+	color: #333333;
+}
+
+#wrapper {
+	width: 1086px;
+	text-align: left;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 50px;
+	height: 1380px;
+}
+#leftShadow {
+	background-image: url(images/01_leftShadow.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 1370px;
+	width: 7px;
+}
+#parchmentBody {
+	background-image: url(images/02_body.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	height: 1370px;
+	width: 1076px;
+	background-color: #FFF;
+	z-index: 10;
+	position: relative;
+}
+#parchmentBodyResume {
+	background-image: url(images/03_body.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	height: 1370px;
+	width: 1076px;
+	background-color: #FFF;
+	z-index: 10;
+	position: relative;
+}
+#bodyDate {
+	float: left;
+	margin-top: 150px;
+	padding-left: 600px;
+	text-align: left;
+	width: 428px;
+}
+#resumeHeader {
+	float: left;
+	width: 842px;
+	margin-top: 70px;
+	text-align: left;
+	margin-right: 117px;
+	margin-left: 117px;
+}
+#resumeExperience {
+	float: left;
+	width: 842px;
+	margin-top: 5px;
+	text-align: left;
+	margin-right: 117px;
+	margin-left: 117px;
+}
+#resumeWebWrap {
+	width: 842px;
+	margin-top: 20px;
+	clear: right;
+	float: left;
+}
+#resumeWeb {
+	float: left;
+	width: 242px;
+}
+#resumeWebContent {
+	float: left;
+	width: 585px;
+	margin-left: 15px;
+}
+
+#resumeTERRaceWrap {
+	width: 842px;
+	margin-top: 20px;
+	clear: right;
+	float: left;
+}
+
+#resumeTERRace {
+	float: left;
+	width: 262px;
+}
+
+#resumeTERRaceContent {
+	float: left;
+	width: 565px;
+	margin-left: 15px;
+}
+#lumberjackWrap {
+	width: 842px;
+	margin-top: 20px;
+	clear: right;
+	float: left;
+}
+
+#lumberjack {
+	float: left;
+	width: 262px;
+}
+
+#lumberjackContent {
+	float: left;
+	width: 565px;
+	margin-left: 15px;
+}
+#dadWrap {
+	width: 842px;
+	margin-top: 20px;
+	clear: right;
+	float: left;
+}
+#dad {
+	float: left;
+	width: 262px;
+}
+#dadContent {
+	float: left;
+	width: 565px;
+	margin-left: 15px;
+}
+
+
+
+
+#resumeEducation {
+	float: left;
+	width: 842px;
+	margin-top: 20px;
+	text-align: left;
+	margin-right: 117px;
+	margin-left: 117px;
+}
+#wcu {
+	float: left;
+	width: 480px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#vDottedLine {
+	float: left;
+	width: 5px;
+	padding-top: 15px;
+}
+
+#continuingEd {
+	width: 317px;
+	padding-left: 40px;
+	float: left;
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+
+#resumeReferences {
+	float: left;
+	width: 842px;
+	margin-top: 50px;
+	text-align: left;
+	margin-right: 117px;
+	margin-left: 117px;
+}
+
+#headerName {
+	font-family: Calabri, Tahoma, Geneva, sans-serif;
+	font-size: 0.8em;
+	text-align: right;
+	float: right;
+	width: 300px;
+	padding-right: 120px;
+	margin-top: 146px;
+}
+#headerContact {
+	font-family: Calabri, Tahoma, Geneva, sans-serif;
+	font-size: 0.8em;
+	text-align: right;
+	clear: both;
+	float: right;
+	width: 300px;
+	padding-right: 120px;
+	margin-top: 8px;
+}
+#rightShadow {
+	background-image: url(images/03_rightShadow.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 1370px;
+	width: 3px;
+}
+#bottomShadow {
+	background-image: url(images/04_bottomShadow.png);
+	background-repeat: no-repeat;
+	clear: right;
+	float: left;
+	height: 10px;
+	width: 1086px;
+}
+#contactWrapper {
+	width: 1086px;
+	text-align: left;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 50px;
+	height: 690px;
+}
+#contactLeftShadow {
+	background-image: url(images/01_contactLeftShadow.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 680px;
+	width: 7px;
+}
+#contactParchmentBody {
+	background-image: url(images/02_contactBody.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	height: 680px;
+	width: 1076px;
+}
+#contactForm {
+	width: 800px;
+	margin-top: 210px;
+	text-align: justify;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+}
+#mobileForm {
+	width: 500px;
+	margin-top: 210px;
+	text-align: justify;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+}
+
+#thankYouReply {
+	width: 380px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 280px;
+}
+.redTxt {
+	color: #F00;
+}
+.smallTxt {
+	font-size: .8em;
+}
+
+#contactRightShadow {
+	background-image: url(images/03_contactRightShadow.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 680px;
+	width: 3px;
+}
+#contactBottomShadow {
+	background-image: url(images/04_contactBottomShadow.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 10px;
+	width: 1086px;
+}
+.coverLetter {
+	clear: right;
+	float: left;
+	width: 808px;
+	margin-top: 200px;
+	padding-left: 134px;
+	padding-right: 134px;
+}
+#bodyContent {
+	float: left;
+	width: 808px;
+	margin-top: 100px;
+	padding-right: 134px;
+	padding-left: 134px;
+	text-align: justify;
+	clear: both;
+	position: relative;
+}
+#bodyContentBtm {
+	float: left;
+	width: 808px;
+	margin-top: 100px;
+	padding-right: 134px;
+	padding-left: 134px;
+	text-align: justify;
+	clear: both;
+	position: relative;
+}
+#bodySignature {
+	float: left;
+	width: 428px;
+	padding-left: 600px;
+	text-align: left;
+	margin-top: 20px;
+	line-height: 10px;
+}
+#wrapper #parchmentBody #bodySignature img {
+	position: relative;
+	/* [disabled]z-index: 650; */
+	height: 65px;
+	width: 300px;
+	top: 8px;
+	left: -12px;
+}
+.myName {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+.heading01 {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 50px;
+}
+.heading02 {
+	font-weight: bold;
+}
+.heading02Titles {
+	font-weight: bold;
+	text-align: left;
+	padding-right: 20px;
+	color: #666;
+}
+#wrapper #parchmentBodyResume #resumeExperience #resumeTERRaceWrap #resumeTERRaceContent ul {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+#wrapper #parchmentBodyResume #resumeExperience #resumeTERSocialWrap #resumeTERSocialContent ul {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+#wrapper #parchmentBodyResume #resumeExperience #resumeLifeQuotesWrap #resumeLifeQuotesContent ul {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+#wrapper #parchmentBodyResume #resumeHeader p {
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+#wrapper #parchmentBodyResume #resumeExperience #resumeWebWrap #resumeWebContent ul {
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+.heading02AtAGlance {
+	font-weight: bold;
+	padding-left: 20px;
+	text-decoration: underline;
+	line-height: .6em;
+}
+.heading03 {
+	font-style: normal;
+}
+#distinguishAtt {
+	width: 842px;
+	/* [disabled]background-color: #FFF; */
+	margin-top: 10px;
+	height: 180px;
+}
+#topLeftBox {
+	width: 170px;
+	float: left;
+	margin-right: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+	margin-left: 117px;
+
+	border: 1px solid
+#;
+	border: 1px solid transparent;
+}
+#wrapper #parchmentBodyResume #topLeftBox ul {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 15px;
+}
+
+#topLeftVertLine {
+	float: left;
+	width: 2px;
+	/* [disabled]margin-top: 20px; */
+	/* [disabled]height: 176px; */
+	padding-top: 14px;
+}
+#professionalSummary {
+	float: left;
+	width: 640px;
+	margin-left: 20px;
+	padding-top: 0px;
+}
+#notableProjects {
+	width: 640px;
+	float: left;
+	text-align: center;
+	background-image: url(images/dottedLine.png);
+	background-repeat: no-repeat;
+	padding-top: 6px;
+	margin-top: 5px;
+	line-height: 0px;
+	height: 25px;
+}
+
+.textNav:link {
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+
+.textNav:visited {
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+
+.textNav:hover {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+
+.textNav:active {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textMO:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textMO:visited {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textMO:hover {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textMO:active {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+
+.textNavGlance:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textNavGlance:visited {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textNavGlance:hover {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textNavGlance:active {
+	color: #0000FF;
+	text-decoration: none;
+}
+.textNavInPg:link {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavInPg:visited {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavInPg:hover {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavInPg:active {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavItalic:link {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavItalic:visited {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavItalic:hover {
+	color: #0000FF;
+	text-decoration: underline;
+	font-style: italic;
+}
+.textNavItalic:active {
+	color: #0000FF;
+	text-decoration: none;
+	font-style: italic;
+}
+.textNavIncognito:link { text-decoration: none; color: #333; }
+.textNavIncognito:visited { color: #333; text-decoration: none; }
+.textNavIncognito:hover { text-decoration: underline; color: #333; }
+.textNavIncognito:active { color: #333; text-decoration: none; }
+#underConstruction { width: 500px; margin-top: 250px; margin-right: auto; margin-left: auto; }

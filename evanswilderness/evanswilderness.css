@@ -1,0 +1,42 @@
+/* CSS Document */
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	/* [disabled]font-size: 1em; */
+	color: #000;
+}
+#wrapper {
+	width: 575px;
+	text-align: center;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+.signature {
+	line-height: 1.2em;
+	text-align: left;
+	width: 150px;
+	padding-left: 300px;
+}
+h2 {
+	line-height: 0em;
+}
+h3 {
+	line-height: 0em;
+}
+
+
+
+#content {
+	color: #666;
+	text-align: left;
+	width: 575px;
+	margin-top: 50px;
+}

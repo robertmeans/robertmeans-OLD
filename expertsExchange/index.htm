@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>float_row_form</title>
+
+<script language="javascript" src="scripts/floatLayer.js">
+</script><script type="text/javascript" src="scripts/bigGrid_v2.js"></script>
+
+<script language="javascript">
+new FloatLayer('floatlayer',15,15,10);
+function detach(){
+	lay=document.getElementById('floatlayer');
+	l=getXCoord(lay);
+	t=getYCoord(lay);
+	lay.style.position='absolute';
+	lay.style.top=t;
+	lay.style.left=l;
+	//getFloatLayer('floatlayer').initialize();
+	//alignFloatLayers();
+}
+</script>
+<!-- 
+<link href="styles/float_row_form_verticalColumns.css" rel="stylesheet" type="text/css" />
+-->
+<link href="styles/float_row_form.css" rel="stylesheet" type="text/css" /> 
+
+</head>
+
+<body onload="detach();">
+
+<div id="home_container">
+
+
+
+    <div id="floatlayer">
+    <div id="floatlayerTop">
+    	<div id="columnHeader">
+        	1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5
+        </div><!-- columnHeader -->
+    	<!-- <div id="column1_top">1</div><div id="column2_top">2</div><div id="column3_top">3</div><div id="column4_top">4</div><div id="column5_top">5</div> -->
+    	<div id="row1">
+        	<span class="column1"><input type="radio" name="row1" id="a1" value="1" onClick="uncheck_move_a1();" checked="checked" /></span><span class="column2"><input type="radio" name="row2" id="b1" value="2" onClick="uncheck_move_b1();" /></span><span class="column3"><input type="radio" name="row3" id="c1" value="3" onClick="uncheck_move_c1();" /></span><span class="column4"><input type="radio" name="row4" id="d1" value="4" onClick="uncheck_move_d1();" /></span><span class="column5"><input type="radio" name="row5" id="e1" value="5" onClick="uncheck_move_e1();" /></span>
+        </div><!-- row1 -->
+        <div id="row2">
+        	<span class="column1"><input type="radio" name="row1" id="a2" value="1" onClick="uncheck_move_a2();"  /></span><span class="column2"><input type="radio" name="row2" id="b2" value="2" onClick="uncheck_move_b2();" checked="checked" /></span><span class="column3"><input type="radio" name="row3" id="c2" value="3" onClick="uncheck_move_c2();" /></span><span class="column4"><input type="radio" name="row4" id="d2" value="4" onClick="uncheck_move_d2();" /></span><span class="column5"><input type="radio" name="row5" id="e2" value="5" onClick="uncheck_move_e2();" /></span>
+        </div><!-- row2 -->
+        <div id="row3">
+        	<span class="column1"><input type="radio" name="row1" id="a3" value="1" onClick="uncheck_move_a3();" /></span><span class="column2"><input type="radio" name="row2" id="b3" value="2" onClick="uncheck_move_b3();" /></span><span class="column3"><input type="radio" name="row3" id="c3" value="3" onClick="uncheck_move_c3();" checked="checked" /></span><span class="column4"><input type="radio" name="row4" id="d3" value="4" onClick="uncheck_move_d3();" /></span><span class="column5"><input type="radio" name="row5" id="e3" value="5" onClick="uncheck_move_e3();" /></span>
+        </div><!-- row3 -->
+        <div id="row4">
+        	<span class="column1"><input type="radio" name="row1" id="a4" value="1" onClick="uncheck_move_a4();" /></span><span class="column2"><input type="radio" name="row2" id="b4" value="2" onClick="uncheck_move_b4();" /></span><span class="column3"><input type="radio" name="row3" id="c4" value="3" onClick="uncheck_move_c4();" /></span><span class="column4"><input type="radio" name="row4" id="d4" value="4" onClick="uncheck_move_d4();" checked="checked" /></span><span class="column5"><input type="radio" name="row5" id="e4" value="5" onClick="uncheck_move_e4();" /></span>
+        </div><!-- row4 -->
+     </div><!-- floatlayerTop -->
+     
+        <div id="rowSpacer">
+        	&nbsp;
+        </div><!-- rowSpacer -->
+        
+        <div id="floatlayerBottom">
+        <div id="row5">
+        	<span class="column1"><input type="radio" name="row1" id="a5" value="1" onClick="uncheck_move_a5();" /></span><span class="column2"><input type="radio" name="row2" id="b5" value="2" onClick="uncheck_move_b5();" /></span><span class="column3"><input type="radio" name="row3" id="c5" value="3" onClick="uncheck_move_c5();" /></span><span class="column4"><input type="radio" name="row4" id="d5" value="4" onClick="uncheck_move_d5();" /></span><span class="column5"><input type="radio" name="row5" id="e5" value="5" onClick="uncheck_move_e5();" checked="checked" /></span>
+        </div><!-- row5 -->
+        <div id="submitBtn">
+        	<input type="submit" value="Save" />
+        </div><!-- submitBtn -->
+        </div><!-- floatlayerBottom -->
+        
+    </div><!-- floatlayer -->
+
+    
+Default checked order is: row1 (top), row2, row3, row4, row5 (bottom)<br />
+<br />
+I would like when I change a button, the button that was selected in that column will switch places with it.<br />
+<br />
+Click on #3, top row and see how #3, 3rd row switches places? That's how the whole grid needs to work. Unfortunately that wonderful behavior falls apart quickly once you start clicking around. 
+
+</div><!-- home_container -->
+
+</body>
+</html>

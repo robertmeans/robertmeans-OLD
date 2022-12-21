@@ -1,0 +1,16 @@
+
+
+Options +MultiViews
+RewriteEngine on
+
+# RewriteRule ^résumé/(.*)$ $1 [NC,L]
+
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# all eroneous URL's point back to index.php
+ErrorDocument 401 http://www.robertmeans.com/
+ErrorDocument 404 http://www.robertmeans.com/
+ErrorDocument 500 http://www.robertmeans.com/
+

@@ -1,0 +1,42 @@
+a:hover
+{
+	font-size: 10 pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited
+{
+	font-size: 10pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.aLink
+{
+	font-size: 13px;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.aLink:hover
+{
+	font-size: 13px;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.txt {
+	font-size: 10pt;
+	color: #4F4F4F;
+	font-family : Tahoma, Arial, Helvetica, sans-serif;
+	\\ text-decoration: underline;
+	\\ font-weight: bold;
+}
